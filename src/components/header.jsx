@@ -12,11 +12,11 @@ const Header = props => {
   };
 
   return (
-    <>
       <div className="header">
         <ul className="search-header">
           <button className="logo" onClick={props.onClick}>
-            <i className="logo-icon fa-brands fa-youtube"></i>  YouTube
+            <i className="logo-icon fa-brands fa-youtube"></i>
+              YouTube
           </button>
           <form className="search-bar" ref={formRef} onSubmit={handleSubmit}>
             <input className="search-input" ref={inputRef} type="text" />
@@ -26,7 +26,6 @@ const Header = props => {
           </form>
         </ul>
       </div>
-    </>
   );
 };
 
