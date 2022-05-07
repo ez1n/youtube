@@ -1,10 +1,7 @@
 .videos {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
   text-align: center;
-}
-
-.list {
-  width: 50.5rem;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
 }
