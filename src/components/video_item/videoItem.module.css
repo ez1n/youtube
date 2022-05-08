@@ -21,7 +21,6 @@
   display: inline-block;
   margin: 0.5rem;
   width: 40%;
-  height: 100%;
 }
 
 .metadata {
@@ -46,6 +45,7 @@
 .channel {
   font-size: 0.6rem;
   color: rgb(92, 92, 92);
+  margin-top: 0.5em;
   display: block;
   text-overflow: ellipsis;
 }
