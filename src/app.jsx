@@ -10,7 +10,7 @@ function App({ youtube }) {
 
   useEffect(() => {
     youtube
-      .mostPopular() //
+      .mostPopular() 
       .then(videos => setVideos(videos));
   }, []);
 
@@ -20,7 +20,7 @@ function App({ youtube }) {
 
   const handleSearch = query => {
     youtube
-      .search(query) //
+      .search(query) 
       .then(videos => {
         setVideos(videos);
         setSelectedVideo(null);
@@ -30,7 +30,7 @@ function App({ youtube }) {
   const onReturn = () => {
     console.log("return")
     youtube
-      .mostPopular() //
+      .mostPopular() 
       .then(videos => {
         setVideos(videos);
         setSelectedVideo(null);
