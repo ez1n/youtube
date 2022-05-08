@@ -16,7 +16,7 @@ const Header = props => {
   };
 
   const handleKeyUp = event => {
-    if (event.keyCode == 13) {
+    if (event.keyCode === 13) {
       handleSearch(event);
       console.log("press enter")
     }
