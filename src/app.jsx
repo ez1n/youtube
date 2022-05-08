@@ -23,14 +23,18 @@ function App({ youtube }) {
       .search(query) //
       .then(videos => {
         setVideos(videos);
-        setSelectedVideo(null)
+        setSelectedVideo(null);
       });
   };
 
   const onReturn = () => {
+    console.log("return")
     youtube
       .mostPopular() //
-      .then(videos => setVideos(videos));
+      .then(videos => {
+        setVideos(videos);
+        setSelectedVideo(null);
+        });
   };
 
   return (
