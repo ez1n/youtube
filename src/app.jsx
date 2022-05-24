@@ -12,7 +12,7 @@ function App({ youtube }) {
     youtube
       .mostPopular() 
       .then(videos => setVideos(videos));
-  }, []);
+  }, [youtube]);
 
   const selectVideo = (video) => {
     setSelectedVideo(video);
